@@ -14,3 +14,7 @@
 
 ### 원본기사 링크
 https://www.aitimes.kr/news/articleView.html?idxno=28251
+
+
+#댓글
+잘 보았습니다. 이뷰 감사합니다. -연석
