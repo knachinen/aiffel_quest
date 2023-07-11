@@ -101,7 +101,10 @@ drop_label = ["holiday", "casual", "registered"]
 train.drop(drop_label, axis=1, inplace=True)
 train.head(3)
 
-# 컬럼 선별에서 countplot은 단순히 데이터의 개수를 표시하기 때문에 barplot이나 pointplot을 이용해서 count 결정에 유의미한 영향을 주는지 판단하는 과정이 있었어도 좋았을 것 같습니다. 또 corr()를 통해 상관관계 분석을 해봤을 때 month와 season, temp와 atemp의 상관관계가 1에 근접하게 나왔기 때문에 둘 중 하나를 선택하는 것이 좋았을 것 같습니다.
+# 컬럼 선별에서 countplot은 단순히 데이터의 개수를 표시하기 때문에 barplot이나 pointplot을 이용해서 
+# count 결정에 유의미한 영향을 주는지 판단하는 과정이 있었어도 좋았을 것 같습니다. 
+# 또 corr()를 통해 상관관계 분석을 해봤을 때 month와 season, temp와 atemp의 상관관계가 
+# 1에 근접하게 나오기 때문에 둘 중 하나를 선택하는 것이 좋았을 것 같습니다.
 ```
 ```python
 for i in range(1, 1000):
@@ -113,5 +116,6 @@ for i in range(1, 1000):
     if i % 100 == 0:
       print(f'iteration {i} : Loss {L:0.4f}')
 
-# project 1의 학습을 돌리는 과정에서 range를 1000으로 설정하여 900까지의 결과만 표시되었습니다. 아래쪽에서 100번마다 표시하게 되어있기 때문에 1001로 수정한다면 1000번의 값까지 print될 수 있을 것 같습니다.
+# project 1의 학습을 돌리는 과정에서 range를 1000으로 설정하여 900까지의 결과만 표시되었습니다. 
+# 아래쪽에서 100번마다 표시하게 되어있기 때문에 1001로 수정한다면 1000번의 값까지 print될 수 있을 것 같습니다.
 ```
